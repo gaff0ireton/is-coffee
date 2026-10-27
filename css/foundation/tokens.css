@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+:root {
+  /* Colors */
+  --color-base: #F5F5F2;
+  --color-main: #30383B;
+  --color-accent: #B48A63;
+  --color-text: #24282A;
+  --color-primary: #654b36;
+
+  /* Typography */
+  --font-en: "DM Sans", sans-serif;
+  --font-ja: "Zen Kaku Gothic New", sans-serif;
+
+  /* Layout */
+  --container-width: 1200px;
+  --section-spacing: clamp(80px, 8vw, 160px);
+
+  /* Animation */
+  --duration-normal: 300ms;
+  --ease-default: ease-in-out;
+}

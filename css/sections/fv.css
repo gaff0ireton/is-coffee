@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+.fv {
+    margin-top: 93px;
+    height: calc(100vh - 93px);
+    position: relative;
+
+    .fv__box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+
+        p {
+            font-family: var(--font-ja);
+            font-size: 2rem;
+            color: var(--color-base);
+            letter-spacing: .05em;
+            white-space: nowrap;
+
+            @media screen and (max-width:768px) {
+                font-size: calc(20 / 375 * 100vw);
+            }
+
+        }
+    }
+
+    .fv__logo {
+        max-width: 393px;
+    }
+}

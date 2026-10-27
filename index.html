@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Zen+Kaku+Gothic+New&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script type="module" src="js/main.js"></script>
+</head>
+
+<body>
+
+    <!-- note ヘッダー -->
+
+    <header class="header">
+        <div class="header__inner">
+            <a><img src="/assets/icons/img_header_icon.svg" alt=""></a>
+            <button class="header__btn sp-only" for="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="header__nav">
+                <div class="nav__body">
+                    <div><img src="/assets/icons/img_nav_icon.svg" alt=""></div>
+                    <ul>
+                        <li><a href="#info">Information</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#shop">Online Shop</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#access">Access</a></li>
+                    </ul>
+                    <a href=""><img src="/assets/icons/img_sns_icon.svg" alt=""></a>
+                </div>
+            </nav>
+    </header>
+
+    <!-- note fv -->
+
+    <div class="fv swiper">
+        <div class="fv__box">
+            <div class="fv__logo"><img src="/assets/icons/img_fv_icon_pc.svg" alt=""></div>
+            <p>日常に、少しだけ特別な余白を。</p>
+        </div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./assets/images/img_fv_01.webp" alt="落ち着いた雰囲気のカフェ店内"
+                    fetchpriority="high">
+            </div>
+            <div class="swiper-slide"><img src="./assets/images/img_fv_02.webp" alt="is Coffeeの店内風景" loading="lazy">
+            </div>
+            <div class="swiper-slide"><img src="./assets/images/img_fv_03.webp" alt="店内のゆったりした席" loading="lazy"></div>
+        </div>
+    </div>
+
+    <!-- note infoセクション -->
+
+    <section class="info section" id="info" aria-labelledby="info-title">
+        <h2 class="info__title underline" id="info-title">Information</h2>
+        <div class="info__list">
+            <details class="info__item">
+                <summary class="info__summary">
+                    <time datetime="2026-10-26">2026.10.26</time>
+                    <span>今週の週替わりのブレンド</span>
+                </summary>
+                <div class="info__content">
+                    <p>今週は、やわらかな甘みと香ばしさが広がる、バランスのよいブレンドをご用意しました。</p>
+                    <p>ひと口目にはナッツのような香り、後味にはチョコレートを思わせる穏やかな余韻。</p>
+                    <p>週ごとに変わる豆の個性を、ぜひお楽しみください。</p>
+                </div>
+            </details>
+            <details class="info__item">
+                <summary class="info__summary">
+                    <time datetime="2026-10-19">2026.10.19</time>
+                    <span>季節のシングルオリジンが届きました</span>
+                </summary>
+                <div class="info__content">
+                    <p>今季は、エチオピア南部のグジ地区で育まれたコーヒー豆をご用意しました。</p>
+                    <p>標高の高い山岳地帯に位置するグジ地区は、豊かな自然環境と昼夜の寒暖差に恵まれたコーヒー産地です。</p>
+                    <p>今回の豆は、収穫したコーヒーチェリーを果実のまま乾燥させる「ナチュラル精製」で仕上げられたもの。ベリーを思わせる華やかな香りと、果実のような甘み、やわらかな酸味が特徴です。</p>
+                    <p>豆本来の個性を引き出す浅煎りで、すっきりとした後味に仕上げました。</p>
+                    <p>この季節だけの特別な一杯を、ぜひお楽しみください。</p>
+                </div>
+            </details>
+            <details class="info__item">
+                <summary class="info__summary">
+                    <time datetime="2026-10-12">2026.10.12</time>
+                    <span>秋の味覚を楽しむ、季節のキッシュが登場しました</span>
+                </summary>
+                <div class="info__content">
+                    <p>季節の野菜を使ったキッシュに、秋の味わいが仲間入りしました。</p>
+                    <p>今回使用するのは、ほくほくとした甘みのあるかぼちゃと、香り豊かな舞茸、しめじ。秋ならではの食材を組み合わせ、素材の持ち味を大切に仕上げています。</p>
+                    <p>バターの香るサクサクの生地に、卵と生クリーム、チーズを合わせたなめらかなフィリング。かぼちゃのやさしい甘みと、きのこの旨みが口いっぱいに広がります。</p>
+                    <p>軽めのランチにはもちろん、コーヒーのお供にもおすすめです。</p>
+                </div>
+            </details>
+        </div>
+    </section>
+
+    <!-- note aboutセクション -->
+
+    <section class="about" id="about" aria-labelledby="about-title">
+        <h2 class="about__title underline" id="about-title">about</h2>
+        <div>
+            <h3 class="about__subTitle">コーヒーを味わう時間を、<br>もっと自由に。</h3>
+            <div class="about__text">
+                <p>豆の個性を大切に、<br>一杯ずつ丁寧に淹れるコーヒー。</p>
+                <p>お気に入りの器に触れながら、<br>本を読んだり、ただぼんやりしたり。</p>
+                <p>店内では、看板猫も気ままに過ごしています。</p>
+                <p>慌ただしい日常から少し離れて、<br>自分だけの時間を楽しむ。</p>
+                <p>is Coffeeは、そんな何気ないひとときを<br>大切にするカフェです。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- note shopセクション -->
+
+    <section class="shop" id="shop" aria-labelledby="shop-title">
+        <h2 class="shop__title underline" id="shop-title">Online Shop</h2>
+        <div>
+            <div><img src="" alt=""></div>
+            <div><img src="" alt=""></div>
+            <div><img src="" alt=""></div>
+            <div><img src="" alt=""></div>
+        </div>
+        <a class="shop__button" href="">オンラインショップを見る</a>
+
+    </section>
+
+    <!-- note catセクション -->
+
+    <section class="cat" id="cat" aria-labelledby="cat-title">
+        <div class="cat__image"><img src="" alt=""></div>
+        <div class="cat__text">
+            <h2 class="cat__copy" id="cat-title">気まぐれな、もうひとりの店主。<span>看板猫　ミル</span></h2>
+            <p>is Coffeeには、<br>のんびり気ままに過ごす看板猫がいます。<br>窓辺でくつろいだり、店内をお散歩したり。<br>コーヒーの香りに包まれながら、猫と過ごすとときをお楽しみください。
+            </p>
+        </div>
+    </section>
+
+    <!-- note menuセクション -->
+
+    <section class="menu section" id="menu" aria-labelledby="menu-title">
+        <h2 class="menu__title underline" id="menu-title">Menu</h2>
+        <div class="menu__box">
+            <button type="button" class="menu__item" data-menu-open="coffee" aria-haspopup="dialog"
+                aria-label="Hand Drip Coffeeのメニューを開く">
+                <span class="menu__head"><span class="menu__label-en">01 / SPECIALTY</span><span
+                        class="menu__category underline">Hand Drip Coffee</span><span
+                        class="menu__label-ja">ハンドドリップコーヒー</span></span>
+            </button>
+            <button type="button" class="menu__item" data-menu-open="food" aria-haspopup="dialog"
+                aria-label="Foodのメニューを開く">
+                <span class="menu__head"><span class="menu__label-en">02 / DINING</span><span
+                        class="menu__category underline">Food</span><span
+                        class="menu__label-ja">素材を楽しむ季節のお食事</span></span>
+            </button>
+            <button type="button" class="menu__item" data-menu-open="sweets" aria-haspopup="dialog"
+                aria-label="Sweetsのメニューを開く">
+                <span class="menu__head"><span class="menu__label-en">03 / DESSERT</span><span
+                        class="menu__category underline">Sweets</span><span
+                        class="menu__label-ja">心ほどける自家製スイーツ</span></span>
+            </button>
+            <button type="button" class="menu__item" data-menu-open="drink" aria-haspopup="dialog"
+                aria-label="Drinkのメニューを開く">
+                <span class="menu__head"><span class="menu__label-en">04 / BEVERAGE</span><span
+                        class="menu__category underline">Drink</span><span
+                        class="menu__label-ja">その日の気分に合わせた一杯</span></span>
+            </button>
+        </div>
+
+        <!-- note メニュー用モーダル -->
+
+        <dialog class="menu__detail" aria-label="メニュー詳細" data-menu-dialog>
+            <button type="button" class="menu__close" data-menu-close aria-label="メニューを閉じる">×</button>
+            <article class="menu__panel" data-menu-panel="coffee">
+                <div class="menu__detailHead">
+                    <p class="menu__label-en">01 / SPECIALTY</p>
+                    <h3 class="menu__detailTitle underline">Hand Drip Coffee</h3>
+                    <p class="menu__label-ja">ハンドドリップコーヒー</p>
+                </div>
+                <div class="menu__body">
+                    <div class="menu__image"><img src="./assets/images/img_menu_01_01.webp" alt="コーヒー" loading="lazy">
+                    </div>
+                    <div class="menu__text">
+                        <p><span>特製ブレンド（ホット/アイス）</span><span>¥550</span></p>
+                        <p><span>季節のシングルオリジン</span><span>¥650〜</span></p>
+                        <p><span>深煎りブレンド（ホット/アイス）</span><span>¥500</span></p>
+                        <p><span>アメリカーノ</span><span>¥500</span></p>
+                        <p><span>エスプレッソ</span><span>¥550</span></p>
+                        <p><span>カフェラテ（ホット/アイス）</span><span>¥550</span></p>
+                    </div>
+                </div>
+            </article>
+            <article class="menu__panel" data-menu-panel="food" hidden>
+                <div class="menu__detailHead">
+                    <p class="menu__label-en">02 / DINING</p>
+                    <h3 class="menu__detailTitle underline">Food</h3>
+                    <p class="menu__label-ja">素材を楽しむ季節のお食事</p>
+                </div>
+                <div class="menu__body">
+                    <div class="menu__image"><img src="./assets/images/img_menu_02_01.webp" alt="お食事メニュー"
+                            loading="lazy"></div>
+                    <div class="menu__text">
+                        <p><span>厚切りバタートースト</span><span>価格未定</span></p>
+                        <p><span>ハムとチーズのカンパーニュサンド</span><span>価格未定</span></p>
+                        <p><span>季節の野菜のキッシュ</span><span>価格未定</span></p>
+                    </div>
+                </div>
+            </article>
+            <article class="menu__panel" data-menu-panel="sweets" hidden>
+                <div class="menu__detailHead">
+                    <p class="menu__label-en">03 / DESSERT</p>
+                    <h3 class="menu__detailTitle underline">Sweets</h3>
+                    <p class="menu__label-ja">心ほどける自家製スイーツ</p>
+                </div>
+                <div class="menu__body">
+                    <div class="menu__image"><img src="./assets/images/img_menu_03_01.webp" alt="スイーツメニュー"
+                            loading="lazy"></div>
+                    <div class="menu__text">
+                        <p><span>本日のスイーツ</span><span>価格未定</span></p>
+                        <p><span>アフォガート</span><span>価格未定</span></p>
+                    </div>
+                </div>
+            </article>
+            <article class="menu__panel" data-menu-panel="drink" hidden>
+                <div class="menu__detailHead">
+                    <p class="menu__label-en">04 / BEVERAGE</p>
+                    <h3 class="menu__detailTitle underline">Drink</h3>
+                    <p class="menu__label-ja">その日の気分に合わせた一杯</p>
+                </div>
+                <div class="menu__body">
+                    <div class="menu__image"><img src="./assets/images/img_menu_04_01.webp" alt="ドリンクメニュー"
+                            loading="lazy"></div>
+                    <div class="menu__text">
+                        <p><span>アールグレイティー</span><span>価格未定</span></p>
+                        <p><span>季節のドリンク</span><span>価格未定</span></p>
+                    </div>
+                </div>
+            </article>
+        </dialog>
+    </section>
+
+    <!-- note snsセクション -->
+
+    <section class="sns" id="sns" aria-labelledby="sns-title">
+        <div class="sns__text">
+            <h2 class="sns__title" id="sns-title"><span>Instagram</span></h2>
+            <h3>お店の何気ない日常を、少しずつ。</h3>
+            <p>季節のコーヒーや新メニュー、看板猫の気ままな日常など、<br>is Coffeeの「今」をお届けしています。</p>
+        </div>
+        <div class="sns__imageBox">
+            <div class="sns__image">
+                <img src="" alt="">
+            </div>
+            <div class="sns__image">
+                <img src="" alt="">
+            </div>
+            <div class="sns__image">
+                <img src="" alt="">
+            </div>
+            <div class="sns__image">
+                <img src="" alt="">
+            </div>
+        </div>
+        <a class="sns__bottun" href="">Instagramを見る</a>
+    </section>
+
+    <!-- note accessセクション -->
+
+    <section class="access section" id="access" aria-labelledby="access-title">
+        <div class="section__inner">
+            <h2 class="access__title underline" id="access-title">Access</h2>
+            <div class="access__body">
+                <div class="access__info">
+                    <dl class="access__list">
+                        <div>
+                            <dt>Access</dt>
+                            <dd>〒650-0002 兵庫県神戸市中央区北野町1-1-3</dd>
+                        </div>
+                        <div>
+                            <dt>Open</dt>
+                            <dd>8:00 - 18:00 (LO:17:00)</dd>
+                        </div>
+                        <div>
+                            <dt>Close</dt>
+                            <dd>毎週火曜日・第3水曜日</dd>
+                        </div>
+                        <div>
+                            <dt>Station</dt>
+                            <dd>神戸市営地下鉄 新神戸駅より徒歩7分<br>JR・阪急・阪神 三宮駅より徒歩15分</dd>
+                        </div>
+                        <div>
+                            <dt>Tel</dt>
+                            <dd>000-000-0000</dd>
+                        </div>
+                    </dl>
+                    <a class="button access__button"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=%E5%85%B5%E5%BA%AB%E7%9C%8C%E7%A5%9E%E6%88%B8%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8C%97%E9%87%8E%E7%94%BA1-1-3"
+                        target="_blank" rel="noopener noreferrer">Googleマップで見る</a>
+                </div>
+                <div class="access__map" aria-label="地図の設置予定エリア"><span>Google Map<br>（埋め込み準備中）</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- note フッター -->
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__body">
+                <div class="footer__navBox">
+                    <a class="footer__logo" href="#top" aria-label="ページの先頭に戻る"><img
+                            src="./assets/icons/img_nav_icon.svg"
+                            alt="is Coffee"></a>
+                    <nav aria-label="フッターナビゲーション">
+                        <ul class="footer__nav">
+                            <li><a href="#info">Information</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#menu">Menu</a></li>
+                            <li><a href="#shop">Online Shop</a></li>
+                            <li><a href="#access">Access</a></li>
+                            <li><a href="#sns">Instagram</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__image"><img src="TODO:"
+                        alt="is Coffee 店内の窓際席"
+                        loading="lazy"></div>
+            </div>
+            <p class="footer__bottom"><small>&copy; 2026 is Coffee</small></p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+
+.info__item {
+    interpolate-size: allow-keywords;
+    padding: 1rem 0;
+    max-width: 750px;
+    margin: 0 auto;
+
+    &::details-content {
+        height: 0;
+        opacity: 0;
+        overflow: clip;
+
+        transition:
+            height .5s ease,
+            opacity .5s ease,
+            content-visibility .5s allow-discrete;
+    }
+
+    &[open]::details-content {
+        height: auto;
+        opacity: 1;
+    }
+}
+
+.info__summary {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+    gap: .5rem;
+}
+
+.info__summary::after {
+    content: "";
+    /* 矢印のスタイル */
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 1rem;
+    aspect-ratio: 1/1;
+    border-top: 3px solid var(--color-main);
+    border-right: 3px solid var(--color-main);
+    transform: rotate(135deg);
+    transition: transform .5s;
+}
+
+.info__item[open] .info__summary::after {
+    transform: rotate(-45deg);
+}
+
+.info__content {
+    padding-block: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 1rem;
+}
