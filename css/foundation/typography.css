@@ -1,102 +1,91 @@
+@charset "utf-8";
+
 :is(.info__title, .about__title, .shop__title, .menu__title, .sns__title, .access__title) {
     font-family: var(--font-en);
     font-weight: 700;
     font-size: 2rem;
     line-height: 1.4;
-    letter-spacing: 0.1em;
-    margin-bottom: 3rem;
-
-    @media screen and (max-width:768px) {
-        font-size: calc(28 / 375 * 100vw);
-    }
+    letter-spacing: .1em;
+    margin-bottom: 3.5rem;
 }
 
 :is(.info__content, .about__text, .cat__text p) {
     font-family: var(--font-ja);
     font-size: 1rem;
     line-height: 1.9;
-    letter-spacing: 0.04em;
-
-    @media screen and (max-width:768px) {
-        font-size: calc(16 / 375 * 100vw);
-    }
+    letter-spacing: .04em;
 }
 
 .info__summary {
     font-family: var(--font-ja);
-    line-height: 1;
+    line-height: 1.4;
     letter-spacing: .1em;
 
     time {
         font-size: .875rem;
         font-weight: 400;
-
-        @media screen and (max-width:768px) {
-            font-size: calc(14 / 375 * 100vw);
-        }
     }
 
     span {
         font-size: 1rem;
         font-weight: 700;
-
-        @media screen and (max-width:768px) {
-            font-size: calc(16 / 375 * 100vw);
-        }
     }
 }
 
 .menu__head {
     .menu__label-en {
-        font-family: var(--font-en);
+        font: 400 .875rem/1.5 var(--font-en);
         color: var(--color-accent);
-        font-size: .875rem;
-        line-height: 1.5;
         letter-spacing: .1em;
     }
 
     .menu__category {
-        font-family: var(--font-en);
         color: var(--color-base);
-        font-size: 1.75rem;
-        font-weight: 700;
+        font: 700 1.75rem/1.4 var(--font-en);
     }
 
     .menu__label-ja {
-        font-family: var(--font-ja);
+        font: 400 .875rem/1.5 var(--font-ja);
         color: var(--color-base);
-        font-size: .875rem;
-        line-height: 1.5;
         letter-spacing: .1em;
     }
 }
 
-.header__nav {
-    ul {
-        a {
-            font-family: var(--font-en);
-            color: var(--color-base);
-            font-size: 1.5rem;
-            line-height: 1.6;
-            letter-spacing: .1em;
-        }
-    }
+.header__nav ul a {
+    font: 400 1.5rem/1.6 var(--font-en);
+    color: var(--color-base);
+    letter-spacing: .1em;
 }
-
 
 .underline {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 12px;
-
     width: fit-content;
     margin-inline: auto;
 
     &::after {
         content: "";
+        display: block;
         width: 102px;
         height: 4px;
-        background-color: var(--color-accent);
+        background: var(--color-accent);
+    }
+}
+
+@media (max-width: 768px) {
+    :is(.info__title, .about__title, .shop__title, .menu__title, .sns__title, .access__title) {
+        font-size: clamp(1.5rem, 7.46vw, 1.75rem);
+        margin-bottom: 2.5rem;
+    }
+
+    :is(.info__content, .about__text, .cat__text p) {
+        font-size: 1rem;
+    }
+
+    .underline::after {
+        width: 92px;
+        height: 2px;
     }
 }
