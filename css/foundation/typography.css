@@ -9,7 +9,7 @@
 }
 
 :is(.info__title, .about__title, .shop__title, .menu__title, .access__title) {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 }
 
 :is(.about__subTitle, .cat__copy, .menu__text h4, .sns__text h3) {
@@ -95,11 +95,23 @@
 
 @media (max-width: 768px) {
     :is(.info__title, .about__title, .shop__title, .menu__title, .sns__title, .access__title) {
-        font-size: clamp(1.5rem, 7.46vw, 1.75rem);
+        font-size: calc(28 / 375 * 100vw);
+    }
+
+    :is(.info__title, .about__title, .shop__title, .menu__title, .access__title) {
+        margin-bottom: calc(32 / 375 * 100vw);
+    }
+
+    :is(.about__subTitle, .cat__copy, .menu__text h4, .sns__text h3) {
+        font-size: calc(20 / 375 * 100vw);
     }
 
     :is(.info__content, .about__text, .cat__text p) {
         font-size: calc(16 / 375 * 100vw);
+    }
+
+    .underline {
+        gap: calc(6/ 375 * 100vw);
     }
 
     .underline::after {
