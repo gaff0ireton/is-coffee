@@ -44,16 +44,31 @@
 }
 
 @media (max-width: 768px) {
-    .access__body {
-        flex-direction: column;
-    }
 
-    .access__info {
-        order: 2;
-    }
+    .access {
+        .access__body {
+            flex-direction: column;
+        }
 
-    .access__map {
-        max-width: 100%;
-        order: 1;
+        .access__info {
+            order: 2;
+        }
+
+        .access__map {
+            max-width: 100%;
+            order: 1;
+        }
+
+        .access__list {
+
+            >div {
+
+                >dt {
+                    max-width: 100%;
+                    min-width: auto;
+                    width: calc(56 / 375 * 100vw);
+                }
+            }
+        }
     }
 }

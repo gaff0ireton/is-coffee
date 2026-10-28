@@ -40,6 +40,12 @@ summary:focus-visible {
   scroll-margin-top: var(--header-height);
 }
 
+@media (max-width: 768px) {
+  .section {
+    padding: calc(64 / 375 * 100vw) calc(16 / 375 * 100vw);
+  }
+}
+
 .section__inner {
   width: min(calc(100% - 48px), var(--container-width));
   margin-inline: auto;

@@ -10,10 +10,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Zen+Kaku+Gothic+New&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/lenis@1.3.27/dist/lenis.css" />
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://unpkg.com/lenis@1.3.27/dist/lenis.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+
     <script type="module" src="js/main.js"></script>
 </head>
 
@@ -125,13 +131,13 @@
 
     <!-- note shopセクション -->
 
-    <section class="shop" id="shop" aria-labelledby="shop-title">
+    <section class="shop section" id="shop" aria-labelledby="shop-title">
         <h2 class="shop__title underline" id="shop-title">Online Shop</h2>
-        <div>
-            <div><img src="" alt=""></div>
-            <div><img src="" alt=""></div>
-            <div><img src="" alt=""></div>
-            <div><img src="" alt=""></div>
+        <div class="shop__imageBox">
+            <div><img src="/assets/images/img_shop_01.webp" alt=""></div>
+            <div><img src="/assets/images/img_shop_02.webp" alt=""></div>
+            <div><img src="/assets/images/img_shop_03.webp" alt=""></div>
+            <div><img src="/assets/images/img_shop_04.webp" alt=""></div>
         </div>
         <a class="button shop__button" href=""><span>オンラインショップを見る</span><span><img
                     src="/assets/icons/img_arrow_icon.svg" alt=""></span></a>
@@ -140,14 +146,14 @@
 
     <!-- note catセクション -->
 
-    <section class="cat" id="cat" aria-labelledby="cat-title">
+    <section class="cat section" id="cat" aria-labelledby="cat-title">
         <div class="cat__inner">
             <div class="cat__image"><img src="/assets/images/img_cat.webp" alt="看板猫　ミルの画像"></div>
             <div class="cat__text">
                 <h2 class="cat__copy" id="cat-title"><span>気まぐれな、<br class="sp-only">もうひとりの店主。</span><span
                         class="size-s">看板猫　ミル</span>
                 </h2>
-                <p>is Coffeeには、<br>のんびり気ままに過ごす看板猫がいます。<br>窓辺でくつろいだり、店内をお散歩したり。<br>コーヒーの香りに包まれながら、猫と過ごすとときをお楽しみください。
+                <p>is Coffeeには、<br>のんびり気ままに過ごす看板猫がいます。<br>窓辺でくつろいだり、店内をお散歩したり。<br>コーヒーの香りに包まれながら、猫と過ごすひとときをお楽しみください。
                 </p>
             </div>
         </div>
@@ -160,24 +166,40 @@
         <div class="menu__box">
             <button type="button" class="menu__item" data-menu-open="coffee" aria-haspopup="dialog"
                 aria-label="Hand Drip Coffeeのメニューを開く">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="">
+                    <img src="/assets/images/img_menu_01.webp" alt="">
+                </picture>
                 <span class="menu__head"><span class="menu__label-en">01 / SPECIALTY</span><span
                         class="menu__category underline">Hand Drip Coffee</span><span
                         class="menu__label-ja">ハンドドリップコーヒー</span></span>
             </button>
             <button type="button" class="menu__item" data-menu-open="food" aria-haspopup="dialog"
                 aria-label="Foodのメニューを開く">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="">
+                    <img src="/assets/images/img_menu_02.webp" alt="">
+                </picture>
                 <span class="menu__head"><span class="menu__label-en">02 / DINING</span><span
                         class="menu__category underline">Food</span><span
                         class="menu__label-ja">素材を楽しむ季節のお食事</span></span>
             </button>
             <button type="button" class="menu__item" data-menu-open="sweets" aria-haspopup="dialog"
                 aria-label="Sweetsのメニューを開く">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="">
+                    <img src="/assets/images/img_menu_03.webp" alt="">
+                </picture>
                 <span class="menu__head"><span class="menu__label-en">03 / DESSERT</span><span
                         class="menu__category underline">Sweets</span><span
                         class="menu__label-ja">心ほどける自家製スイーツ</span></span>
             </button>
             <button type="button" class="menu__item" data-menu-open="drink" aria-haspopup="dialog"
                 aria-label="Drinkのメニューを開く">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="">
+                    <img src="/assets/images/img_menu_04.webp" alt="">
+                </picture>
                 <span class="menu__head"><span class="menu__label-en">04 / BEVERAGE</span><span
                         class="menu__category underline">Drink</span><span
                         class="menu__label-ja">その日の気分に合わせた一杯</span></span>
@@ -308,14 +330,17 @@
 
     <!-- note snsセクション -->
 
-    <section class="sns" id="sns" aria-labelledby="sns-title">
+    <section class="sns section" id="sns" aria-labelledby="sns-title">
         <div class="sns__inner">
             <div class="sns__top">
                 <div class="sns__text">
-                    <h2 class="sns__title" id="sns-title"><iconify-icon
-                            icon="lucide:instagram"></iconify-icon><span>Instagram</span></h2>
-                    <h3>お店の何気ない日常を、少しずつ。</h3>
-                    <p>季節のコーヒーや新メニュー、看板猫の気ままな日常など、<br>is Coffeeの「今」をお届けしています。</p>
+                    <h2 class="sns__title" id="sns-title">
+                        <iconify-icon
+                            icon="lucide:instagram"></iconify-icon>
+                        <span>Instagram</span>
+                    </h2>
+                    <h3>お店の何気ない日常を、<br class="sp-only">少しずつ。</h3>
+                    <p>季節のコーヒーや新メニュー、<br class="sp-only">看板猫の気ままな日常など、<br>is Coffeeの「今」をお届けしています。</p>
                 </div>
                 <div class="sns__imageBox">
                     <div class="sns__image">
@@ -334,8 +359,14 @@
             </div>
             <div class="sns__bottom">
                 <p>＠is_coffee</p>
-                <a class="sns__bottun button" href=""><span>Instagramを見る</span><span><img
-                            src="/assets/icons/img_arrow_icon.svg" alt=""></span></a>
+                <a class="sns__bottun button" href="">
+                    <iconify-icon
+                        icon="lucide:instagram"></iconify-icon>
+                    <span>Instagramを見る</span>
+                    <span><img
+                            src="/assets/icons/img_arrow_icon.svg" alt="">
+                    </span>
+                </a>
             </div>
         </div>
     </section>
@@ -350,7 +381,7 @@
                     <dl class="access__list">
                         <div>
                             <dt>Access</dt>
-                            <dd>〒650-0011 兵庫県神戸市中央区下山手通５丁目７−７ 105</dd>
+                            <dd>〒650-0011 兵庫県神戸市中央区下山手通5丁目7-7 105</dd>
                         </div>
                         <div>
                             <dt>Open</dt>
