@@ -82,7 +82,6 @@
             align-items: center;
             gap: 2rem;
             max-width: 850px;
-
         }
     }
 
@@ -91,6 +90,16 @@
         align-items: center;
         justify-content: space-between;
         width: 100%;
+    }
+
+    .menu__body.column {
+        flex-direction: column;
+    }
+
+    .menu__mordal--item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .menu__image {
