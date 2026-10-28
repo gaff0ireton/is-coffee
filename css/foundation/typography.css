@@ -20,7 +20,7 @@
     letter-spacing: .06em;
 }
 
-:is(.cat__copy span) {
+:is(.cat__copy .size-s) {
     font-family: var(--font-ja);
     font-weight: 700;
     font-size: 1.25rem;
@@ -102,7 +102,7 @@
         margin-bottom: calc(32 / 375 * 100vw);
     }
 
-    :is(.about__subTitle, .cat__copy, .menu__text h4, .sns__text h3) {
+    :is(.about__subTitle, .cat__copy, .cat__copy .size-s, .menu__text h4, .sns__text h3) {
         font-size: calc(20 / 375 * 100vw);
     }
 
