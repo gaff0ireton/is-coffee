@@ -23,13 +23,3 @@
         display: block;
     }
 }
-
-.button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    border-radius: 2rem;
-    background-color: var(--color-main);
-    color: var(--color-base);
-}
