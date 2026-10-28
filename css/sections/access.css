@@ -1,1 +1,25 @@
 @charset "utf-8";
+
+.access {
+    .access__body {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .access__list {
+        display: flex;
+        flex-direction: column;
+
+        >div {
+            display: flex;
+            gap: 1rem;
+
+            >dt {
+                max-width: 60px;
+                min-width: 60px;
+                width: 100%;
+            }
+        }
+    }
+}
