@@ -1,1 +1,39 @@
 @charset "utf-8";
+
+.cat {
+    background: var(--color-accent);
+}
+
+.cat__inner {
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    padding: 64px;
+    margin: 0 auto;
+    gap: 32px;
+}
+
+.cat__image {
+    max-width: 350px;
+    max-height: 350px;
+    aspect-ratio: 1;
+}
+
+.cat__copy {
+    margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+    .cat__inner {
+        max-width: 343px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 64px calc(16 / 375 * 100vw);
+    }
+    .cat__image {
+        max-width: 350px;
+        max-height: 350px;
+        aspect-ratio: 1;
+    }
+}
