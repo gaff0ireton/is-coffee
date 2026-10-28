@@ -28,7 +28,7 @@
     letter-spacing: .06em;
 }
 
-:is(.info__content, .about__text, .cat__text p, .menu__text p, .access__list dt, .access__list dd, .sns__title p) {
+:is(.info__content, .about__text, .cat__text p, .menu__text p, .access__list dt, .access__list dd, .sns__text p, .sns__bottom p) {
     font-family: var(--font-ja);
     font-size: 1rem;
     line-height: 1.9;
@@ -76,6 +76,16 @@
     letter-spacing: .1em;
 }
 
+.button {
+    font-size: .875rem;
+    line-height: 1.5;
+    letter-spacing: .06em;
+
+    iconify-icon {
+        font-size: 1.5rem;
+    }
+}
+
 .underline {
     display: flex;
     flex-direction: column;
@@ -106,8 +116,23 @@
         font-size: calc(20 / 375 * 100vw);
     }
 
-    :is(.info__content, .about__text, .cat__text p) {
+    :is(.info__content, .about__text, .cat__text p, .sns__text p, .sns__bottom p, .access__list dt, .access__list dd) {
         font-size: calc(16 / 375 * 100vw);
+    }
+
+    .menu__head {
+        .menu__label-en {
+            font: 400 .875rem/1.5 var(--font-en);
+        }
+
+        .menu__category {
+            color: var(--color-text);
+        }
+
+        .menu__label-ja {
+            font: 400 .875rem/1.5 var(--font-ja);
+            color: var(--color-text);
+        }
     }
 
     .underline {
