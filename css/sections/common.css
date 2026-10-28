@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+@media screen and (max-width: 750px) {
+    .sp-only {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .sp-only {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .pc-only {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .pc-only {
+        display: block;
+    }
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: var(--color-main);
+    color: var(--color-base);
+}

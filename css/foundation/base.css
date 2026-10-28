@@ -45,31 +45,6 @@ summary:focus-visible {
   margin-inline: auto;
 }
 
-@media screen and (max-width: 750px) {
-  .sp-only {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 750px) {
-  .sp-only {
-    display: none !important;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  .pc-only {
-    display: none !important;
-  }
-}
-
-@media screen and (min-width: 750px) {
-  .pc-only {
-    display: block;
-  }
-}
-
-
 @media (max-width: 768px) {
   .section__inner {
     width: min(calc(100% - 32px), var(--container-width));
