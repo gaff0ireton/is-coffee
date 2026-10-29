@@ -65,3 +65,18 @@ form {
     text-align: right;
     font-size: calc(32 / 375 * 100vw);
 }
+
+.gift-modal-reopen {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .gift-modal-reopen:not([hidden]) {
+        display: block;
+        position: fixed;
+        right: 16px;
+        bottom: calc(16px + env(safe-area-inset-bottom));
+        z-index: 100;
+        cursor: pointer;
+    }
+}

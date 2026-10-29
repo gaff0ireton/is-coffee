@@ -214,6 +214,7 @@
             display: flex;
             justify-content: space-between;
             gap: 1em;
+            color: var(--color-text);
 
             span {
                 &:last-child {
