@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+.shop__imageBox {
+    display: flex;
+    /* padding: 64px 120.5px 32px 120.5px; */
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.shop__button {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .shop__imageBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
