@@ -80,20 +80,29 @@
         align-items: center;
         justify-content: space-between;
         width: 100%;
+        gap: 2rem;
     }
 
     .menu__body.column {
         flex-direction: column;
+
     }
 
     .menu__mordal--item {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .menu__detailHead {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .menu__image {
-        max-width: 402px;
+        flex-basis: 402px;
         aspect-ratio: 1/1;
     }
 
@@ -101,10 +110,17 @@
         display: flex;
         flex-direction: column;
         gap: 1rem;
+        flex: 1;
 
         >p {
             display: flex;
             justify-content: space-between;
+        }
+
+        >h4 {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
         }
     }
 }

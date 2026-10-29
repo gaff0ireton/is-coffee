@@ -57,6 +57,7 @@
         .access__map {
             max-width: 100%;
             order: 1;
+            aspect-ratio: 16/9;
         }
 
         .access__list {
