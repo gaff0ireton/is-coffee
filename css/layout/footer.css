@@ -9,12 +9,20 @@
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
+                border-bottom: 1px var(--color-base) solid;
+        padding-bottom: 1rem;
+    }
+
+    .footer__image{
+        width: 500px;
+
     }
 
     .footer__navBox {
         display: flex;
         flex-direction: column;
         gap: 2rem;
+         align-items: center;
     }
 
     .footer__nav {
@@ -32,5 +40,6 @@
 
     .footer__bottom {
         text-align: center;
+       
     }
 }
