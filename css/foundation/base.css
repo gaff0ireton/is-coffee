@@ -37,7 +37,6 @@ summary:focus-visible {
 
 .section {
   padding-block: var(--section-spacing);
-  scroll-margin-top: var(--header-height);
 }
 
 @media (max-width: 768px) {
