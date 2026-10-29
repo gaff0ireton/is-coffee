@@ -47,13 +47,13 @@ summary:focus-visible {
 }
 
 .section__inner {
-  width: min(calc(100% - 48px), var(--container-width));
+  padding: 0 2rem;
   margin-inline: auto;
 }
 
 @media (max-width: 768px) {
   .section__inner {
-    width: min(calc(100% - 32px), var(--container-width));
+    padding: 0;
   }
 }
 

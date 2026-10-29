@@ -1,11 +1,27 @@
 @charset "utf-8";
 
+.shop__body {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 .shop__imageBox {
     display: flex;
-    /* padding: 64px 120.5px 32px 120.5px; */
     gap: 32px;
     max-width: 1200px;
     margin: 0 auto;
+
+    >figure {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
 
 .shop__button {
@@ -14,9 +30,18 @@
 }
 
 @media (max-width: 768px) {
+    .shop__body {
+        gap: calc(32 / 375 * 100vw);
+    }
+
     .shop__imageBox {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: calc(32 / 375 * 100vw);
+
+        >figure {
+            width: 100%;
+            gap: calc(8 / 375 * 100vw);
+        }
     }
 }
