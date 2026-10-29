@@ -8,6 +8,10 @@
     letter-spacing: .1em;
 }
 
+:is(.info__title, .shop__title, .menu__title, .menu__detailTitle, .sns__title, .access__title) {
+    color: var(--color-text);
+}
+
 :is(.info__title, .about__title, .shop__title, .menu__title, .access__title) {
     margin-bottom: 4rem;
 }
@@ -20,12 +24,17 @@
     letter-spacing: .06em;
 }
 
+:is(.cat__copy, .menu__text h4, .sns__text h3) {
+    color: var(--color-text);
+}
+
 :is(.cat__copy .size-s) {
     font-family: var(--font-ja);
     font-weight: 700;
     font-size: 1.25rem;
     line-height: 1.6;
     letter-spacing: .06em;
+    color: var(--color-text);
 }
 
 :is(.info__content, .about__text, .cat__text p, .menu__text p, .access__list dt, .access__list dd, .sns__text p, .sns__bottom p) {
@@ -67,6 +76,12 @@
         font: 400 .875rem/1.5 var(--font-ja);
         color: var(--color-base);
         letter-spacing: .1em;
+    }
+}
+
+.menu__detailHead {
+    .menu__label-en {
+        color: var(--color-accent);
     }
 }
 
@@ -134,6 +149,17 @@
             color: var(--color-text);
         }
     }
+
+    .button {
+        font-size: calc(14 / 375 * 100vw);
+        line-height: 1.5;
+        letter-spacing: .06em;
+
+        iconify-icon {
+            font-size: calc(24 / 375 * 100vw);
+        }
+    }
+
 
     .underline {
         gap: calc(6/ 375 * 100vw);

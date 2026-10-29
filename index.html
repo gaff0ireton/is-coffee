@@ -148,7 +148,7 @@
 
     <section class="cat section" id="cat" aria-labelledby="cat-title">
         <div class="cat__inner">
-            <div class="cat__image"><img src="/assets/images/img_cat.webp" alt="看板猫　ミルの画像"></div>
+            <div class="cat__image"><img src="/assets/images/img_cat.webp" alt="看板猫 ミルの画像"></div>
             <div class="cat__text">
                 <h2 class="cat__copy" id="cat-title"><span>気まぐれな、<br class="sp-only">もうひとりの店主。</span><span
                         class="size-s">看板猫　ミル</span>
@@ -167,8 +167,8 @@
             <button type="button" class="menu__item" data-menu-open="coffee" aria-haspopup="dialog"
                 aria-label="Hand Drip Coffeeのメニューを開く">
                 <picture>
-                    <source media="(max-width: 768px)" srcset="">
-                    <img src="/assets/images/img_menu_01.webp" alt="">
+                    <source media="(max-width: 768px)" srcset="/assets/images/img_menu_01_sp.webp">
+                    <img src="/assets/images/img_menu_01_pc.webp" alt="">
                 </picture>
                 <span class="menu__head"><span class="menu__label-en">01 / SPECIALTY</span><span
                         class="menu__category underline">Hand Drip Coffee</span><span
@@ -177,8 +177,8 @@
             <button type="button" class="menu__item" data-menu-open="food" aria-haspopup="dialog"
                 aria-label="Foodのメニューを開く">
                 <picture>
-                    <source media="(max-width: 768px)" srcset="">
-                    <img src="/assets/images/img_menu_02.webp" alt="">
+                    <source media="(max-width: 768px)" srcset="/assets/images/img_menu_02_sp.webp">
+                    <img src="/assets/images/img_menu_02_pc.webp" alt="">
                 </picture>
                 <span class="menu__head"><span class="menu__label-en">02 / DINING</span><span
                         class="menu__category underline">Food</span><span
@@ -187,8 +187,8 @@
             <button type="button" class="menu__item" data-menu-open="sweets" aria-haspopup="dialog"
                 aria-label="Sweetsのメニューを開く">
                 <picture>
-                    <source media="(max-width: 768px)" srcset="">
-                    <img src="/assets/images/img_menu_03.webp" alt="">
+                    <source media="(max-width: 768px)" srcset="/assets/images/img_menu_03_sp.webp">
+                    <img src="/assets/images/img_menu_03_pc.webp" alt="">
                 </picture>
                 <span class="menu__head"><span class="menu__label-en">03 / DESSERT</span><span
                         class="menu__category underline">Sweets</span><span
@@ -197,8 +197,8 @@
             <button type="button" class="menu__item" data-menu-open="drink" aria-haspopup="dialog"
                 aria-label="Drinkのメニューを開く">
                 <picture>
-                    <source media="(max-width: 768px)" srcset="">
-                    <img src="/assets/images/img_menu_04.webp" alt="">
+                    <source media="(max-width: 768px)" srcset="/assets/images/img_menu_04_sp.webp">
+                    <img src="/assets/images/img_menu_04_pc.webp" alt="">
                 </picture>
                 <span class="menu__head"><span class="menu__label-en">04 / BEVERAGE</span><span
                         class="menu__category underline">Drink</span><span
@@ -208,7 +208,7 @@
 
         <!-- note メニュー用モーダル -->
 
-        <dialog class="menu__detail" aria-label="メニュー詳細" data-menu-dialog>
+        <dialog class="menu__detail" aria-label="メニュー詳細" data-menu-dialog data-lenis-prevent>
             <button type="button" class="menu__close" data-menu-close aria-label="メニューを閉じる">×</button>
             <article class="menu__panel" data-menu-panel="coffee">
                 <div class="menu__detailHead">
@@ -321,7 +321,10 @@
                             loading="lazy"></div>
                     <div class="menu__text">
                         <p><span>アールグレイティー</span><span>価格未定</span></p>
-                        <p><span>季節のドリンク</span><span>価格未定</span></p>
+                        <p><span>ほうじ茶ラテ</span><span>価格未定</span></p>
+                        <p><span>自家製レモネード</span><span>価格未定</span></p>
+                        <p><span>カモミールティー</span><span>価格未定</span></p>
+                        <p><span>りんごジュース</span><span>価格未定</span></p>
                     </div>
                 </div>
             </article>
@@ -374,42 +377,41 @@
     <!-- note accessセクション -->
 
     <section class="access section" id="access" aria-labelledby="access-title">
-        <div class="section__inner">
-            <h2 class="access__title underline" id="access-title">Access</h2>
-            <div class="access__body">
-                <div class="access__info">
-                    <dl class="access__list">
-                        <div>
-                            <dt>Access</dt>
-                            <dd>〒650-0011 兵庫県神戸市中央区下山手通5丁目7-7 105</dd>
-                        </div>
-                        <div>
-                            <dt>Open</dt>
-                            <dd>8:00 - 18:00 (LO:17:00)</dd>
-                        </div>
-                        <div>
-                            <dt>Close</dt>
-                            <dd>毎週火曜日・第3水曜日</dd>
-                        </div>
-                        <div>
-                            <dt>Station</dt>
-                            <dd>神戸市営地下鉄 新神戸駅より徒歩7分<br>JR・阪急・阪神 三宮駅より徒歩15分</dd>
-                        </div>
-                        <div>
-                            <dt>Tel</dt>
-                            <dd>000-000-0000</dd>
-                        </div>
-                    </dl>
-                    <a class="button access__button"
-                        href="https://www.google.com/maps/search/?api=1&amp;query=%E5%85%B5%E5%BA%AB%E7%9C%8C%E7%A5%9E%E6%88%B8%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8C%97%E9%87%8E%E7%94%BA1-1-3"
-                        target="_blank" rel="noopener noreferrer"><span>Googleマップで見る</span><span><img
-                                src="/assets/icons/img_arrow_icon.svg" alt=""></span></a>
-                </div>
-                <div class="access__map" aria-label="地図の設置予定エリア"><iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.6193091065556!2d135.1807730764894!3d34.689556372923654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60008f1c934c0451%3A0xf159ca5a19163e09!2z44CSNjUwLTAwMTEg5YW15bqr55yM56We5oi45biC5Lit5aSu5Yy65LiL5bGx5omL6YCa77yV5LiB55uu77yX4oiS77yX!5e0!3m2!1sja!2sjp!4v1793169834295!5m2!1sja!2sjp"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+
+        <h2 class="access__title underline" id="access-title">Access</h2>
+        <div class="access__body">
+            <div class="access__info">
+                <dl class="access__list">
+                    <div>
+                        <dt>Access</dt>
+                        <dd>〒650-0011 兵庫県神戸市中央区下山手通5丁目7-7 105</dd>
+                    </div>
+                    <div>
+                        <dt>Open</dt>
+                        <dd>8:00 - 18:00 (LO:17:00)</dd>
+                    </div>
+                    <div>
+                        <dt>Close</dt>
+                        <dd>毎週火曜日・第3水曜日</dd>
+                    </div>
+                    <div>
+                        <dt>Station</dt>
+                        <dd>神戸市営地下鉄 新神戸駅より徒歩7分<br>JR・阪急・阪神 三宮駅より徒歩15分</dd>
+                    </div>
+                    <div>
+                        <dt>Tel</dt>
+                        <dd>000-000-0000</dd>
+                    </div>
+                </dl>
+                <a class="button access__button"
+                    href="https://www.google.com/maps/search/?api=1&amp;query=%E5%85%B5%E5%BA%AB%E7%9C%8C%E7%A5%9E%E6%88%B8%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8C%97%E9%87%8E%E7%94%BA1-1-3"
+                    target="_blank" rel="noopener noreferrer"><span>Googleマップで見る</span><span><img
+                            src="/assets/icons/img_arrow_icon.svg" alt=""></span></a>
             </div>
+            <div class="access__map" aria-label="地図の設置予定エリア"><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.6193091065556!2d135.1807730764894!3d34.689556372923654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60008f1c934c0451%3A0xf159ca5a19163e09!2z44CSNjUwLTAwMTEg5YW15bqr55yM56We5oi45biC5Lit5aSu5Yy65LiL5bGx5omL6YCa77yV5LiB55uu77yX4oiS77yX!5e0!3m2!1sja!2sjp!4v1793169834295!5m2!1sja!2sjp"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
         </div>
     </section>
 
