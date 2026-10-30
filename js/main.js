@@ -2,11 +2,13 @@ import { navigation } from "./modules/navigation.js";
 import { initSlider } from "./modules/slider.js";
 import { initMenuModal } from "./modules/menu-modal.js";
 import { loading } from "./modules/load.js";
+import { shop } from "./modules/shop.js";
 
 navigation();
 initSlider();
 initMenuModal();
 loading();
+shop();
 
 const lenis = new Lenis({
     autoRaf: true,

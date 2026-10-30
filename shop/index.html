@@ -9,6 +9,7 @@
   <!-- TODO: 既存サイトの共通CSSとEC用CSSを読み込む -->
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/shop/style.css">
+  <script type="module" src="../js/main.js"></script>
 </head>
 
 <body>
@@ -66,70 +67,7 @@
 
       <div class="ec-products">
         <ul class="ec-products__list">
-          <li class="ec-products__item" data-category="coffee" data-product-id="blend">
-            <article class="ec-product-card">
-              <a class="ec-product-card__link" href="./detail.html?id=blend">
-                <figure class="ec-product-card__figure">
-                  <!-- TODO: 画像パスは用意した素材に変更 -->
-                  <img class="ec-product-card__image" src="../assets/images/shop/img_beans.webp" alt="ハウスブレンドのコーヒー豆"
-                    width="600" height="600" loading="lazy" />
-                </figure>
-                <p class="ec-product-card__category">COFFEE BEANS</p>
-                <h2 class="ec-product-card__name">ハウスブレンド 200g</h2>
-              </a>
-              <p class="ec-product-card__price"><span>¥1,400</span><small>（税込）</small></p>
-              <button class="ec-product-card__button" type="button" data-add-to-cart="blend"
-                aria-label="ハウスブレンドをカートに追加">ADD TO CART</button>
-            </article>
-          </li>
 
-          <li class="ec-products__item" data-category="coffee" data-product-id="dark">
-            <article class="ec-product-card">
-              <a class="ec-product-card__link" href="./detail.html?id=dark">
-                <figure class="ec-product-card__figure">
-                  <img class="ec-product-card__image" src="../assets/images/shop/dark.webp" alt="深煎りブレンドのコーヒー豆"
-                    width="600" height="600" loading="lazy" />
-                </figure>
-                <p class="ec-product-card__category">COFFEE BEANS</p>
-                <h2 class="ec-product-card__name">深煎りブレンド 200g</h2>
-              </a>
-              <p class="ec-product-card__price"><span>¥1,500</span><small>（税込）</small></p>
-              <button class="ec-product-card__button" type="button" data-add-to-cart="dark"
-                aria-label="深煎りブレンドをカートに追加">ADD TO CART</button>
-            </article>
-          </li>
-
-          <li class="ec-products__item" data-category="goods" data-product-id="mug">
-            <article class="ec-product-card">
-              <a class="ec-product-card__link" href="./detail.html?id=mug">
-                <figure class="ec-product-card__figure">
-                  <img class="ec-product-card__image" src="../assets/images/shop/img_mug.webp" alt="オリジナルの陶器マグカップ"
-                    width="600" height="600" loading="lazy" />
-                </figure>
-                <p class="ec-product-card__category">GOODS</p>
-                <h2 class="ec-product-card__name">オリジナルマグカップ</h2>
-              </a>
-              <p class="ec-product-card__price"><span>¥2,200</span><small>（税込）</small></p>
-              <button class="ec-product-card__button" type="button" data-add-to-cart="mug"
-                aria-label="オリジナルマグカップをカートに追加">ADD TO CART</button>
-            </article>
-          </li>
-
-          <li class="ec-products__item" data-category="goods" data-product-id="dripper">
-            <article class="ec-product-card">
-              <a class="ec-product-card__link" href="./detail.html?id=dripper">
-                <figure class="ec-product-card__figure">
-                  <img class="ec-product-card__image" src="../assets/images/shop/dripper.webp" alt="陶器製のコーヒードリッパー"
-                    width="600" height="600" loading="lazy" />
-                </figure>
-                <p class="ec-product-card__category">GOODS</p>
-                <h2 class="ec-product-card__name">陶器ドリッパー</h2>
-              </a>
-              <p class="ec-product-card__price"><span>¥2,800</span><small>（税込）</small></p>
-              <button class="ec-product-card__button" type="button" data-add-to-cart="dripper"
-                aria-label="陶器ドリッパーをカートに追加">ADD TO CART</button>
-            </article>
-          </li>
         </ul>
         <p class="ec-products__empty" hidden>該当する商品はありません。</p>
       </div>
