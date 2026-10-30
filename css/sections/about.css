@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 .about {
-    background-image: url('../assets/images/img_about_bg.webp');
+    background-image: url('../../assets/images/img_about_bg.webp');
     background-size: cover;
     background-position: top center;
     color: var(--color-base);
