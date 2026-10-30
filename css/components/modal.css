@@ -57,13 +57,13 @@
 .gift-modal__content {
     display: flex;
     flex-direction: column;
-    gap: calc(16 / 375 * 100vw);
+    gap: calc(8 / 375 * 100vw);
     text-align: center;
 }
 
 form {
     text-align: right;
-    font-size: calc(32 / 375 * 100vw);
+    font-size: calc(20 / 375 * 100vw);
 }
 
 .gift-modal-reopen {
@@ -78,5 +78,13 @@ form {
         bottom: calc(16px + env(safe-area-inset-bottom));
         z-index: 100;
         cursor: pointer;
+    }
+
+    .gift-modal {
+        max-width: 360px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: calc(8 / 375 * 100vw);
     }
 }

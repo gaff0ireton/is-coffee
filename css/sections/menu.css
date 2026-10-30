@@ -166,6 +166,7 @@
     .menu__body {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         width: 100%;
         gap: 2rem;
     }
@@ -205,7 +206,7 @@
     .menu__text {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: .5rem;
         flex: 1;
         min-width: 0;
         width: 100%;
@@ -262,7 +263,6 @@
         .menu__image {
             flex: none;
             width: 100%;
-            max-width: 400px;
         }
 
         .menu__detail {
