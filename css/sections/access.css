@@ -1,1 +1,75 @@
 @charset "utf-8";
+
+.access {
+    .access__body {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .access__info {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .access__map {
+        max-width: 540px;
+        width: 100%;
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .access__list {
+        display: flex;
+        flex-direction: column;
+
+        >div {
+            display: flex;
+            gap: 1rem;
+
+            >dt {
+                max-width: 60px;
+                min-width: 60px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .access {
+        .access__body {
+            flex-direction: column;
+        }
+
+        .access__info {
+            order: 2;
+        }
+
+        .access__map {
+            max-width: 100%;
+            order: 1;
+            aspect-ratio: 16/9;
+        }
+
+        .access__list {
+
+            >div {
+
+                >dt {
+                    max-width: 100%;
+                    min-width: auto;
+                    width: calc(56 / 375 * 100vw);
+                }
+            }
+        }
+    }
+}

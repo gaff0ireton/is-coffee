@@ -109,3 +109,27 @@
         right: 0;
     }
 }
+
+@media (max-width: 768px) {
+    .header {
+        padding: calc(16 / 375 * 100vw);
+
+        .nav__body {
+            gap: calc(32 / 375 * 100vw);
+
+            ul {
+                gap: calc(16 / 375 * 100vw);
+            }
+        }
+
+        .nav__icon {
+            width: calc(130 / 375 * 100vw);
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

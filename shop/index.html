@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="is Coffeeのオンラインショップ。コーヒー豆やオリジナルグッズをご紹介します。" />
+  <title>ONLINE SHOP | is Coffee</title>
+  <!-- TODO: 既存サイトの共通CSSとEC用CSSを読み込む -->
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/shop/style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">本文へスキップ</a>
+
+  <!-- TODO: 既存サイトのヘッダーに差し替えてOK -->
+  <header class="ec-header">
+    <div class="ec-header__inner">
+      <a class="ec-header__logo" href="../index.html" aria-label="is Coffee トップページ">is Coffee</a>
+      <nav class="ec-header__nav" aria-label="メインナビゲーション">
+        <ul>
+          <li><a href="../index.html">CAFE</a></li>
+          <li><a href="./" aria-current="page">ONLINE SHOP</a></li>
+          <li><a href="../cart/">CART <span class="ec-header__cart-count" aria-label="カート内の商品数">0</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <nav class="ec-breadcrumb" aria-label="パンくずリスト">
+      <ol>
+        <li><a href="../index.html">HOME</a></li>
+        <li aria-current="page">ONLINE SHOP</li>
+      </ol>
+    </nav>
+
+    <section class="ec-shop" aria-labelledby="shop-title">
+      <div class="ec-shop__heading">
+        <p class="ec-shop__eyebrow">OUR PRODUCTS</p>
+        <h1 id="shop-title" class="ec-shop__title">ONLINE SHOP</h1>
+        <p class="ec-shop__lead">お店の味を、ご自宅でも。コーヒー豆と毎日に寄り添うアイテムをお届けします。</p>
+      </div>
+
+      <div class="ec-shop__toolbar">
+        <!-- 絞り込みと並び替えはJS実装時に接続 -->
+        <div class="ec-shop__filter">
+          <label for="category-select">カテゴリー</label>
+          <select id="category-select" name="category">
+            <option value="all">すべて</option>
+            <option value="coffee">コーヒー豆</option>
+            <option value="goods">グッズ</option>
+          </select>
+        </div>
+        <div class="ec-shop__sort">
+          <label for="sort-select">並び替え</label>
+          <select id="sort-select" name="sort">
+            <option value="recommended">おすすめ順</option>
+            <option value="price-asc">価格が安い順</option>
+            <option value="price-desc">価格が高い順</option>
+          </select>
+        </div>
+        <p class="ec-shop__count" id="product-count" aria-live="polite">4件の商品</p>
+      </div>
+
+      <div class="ec-products">
+        <ul class="ec-products__list">
+          <li class="ec-products__item" data-category="coffee" data-product-id="blend">
+            <article class="ec-product-card">
+              <a class="ec-product-card__link" href="./detail.html?id=blend">
+                <figure class="ec-product-card__figure">
+                  <!-- TODO: 画像パスは用意した素材に変更 -->
+                  <img class="ec-product-card__image" src="../assets/images/shop/img_beans.webp" alt="ハウスブレンドのコーヒー豆"
+                    width="600" height="600" loading="lazy" />
+                </figure>
+                <p class="ec-product-card__category">COFFEE BEANS</p>
+                <h2 class="ec-product-card__name">ハウスブレンド 200g</h2>
+              </a>
+              <p class="ec-product-card__price"><span>¥1,400</span><small>（税込）</small></p>
+              <button class="ec-product-card__button" type="button" data-add-to-cart="blend"
+                aria-label="ハウスブレンドをカートに追加">ADD TO CART</button>
+            </article>
+          </li>
+
+          <li class="ec-products__item" data-category="coffee" data-product-id="dark">
+            <article class="ec-product-card">
+              <a class="ec-product-card__link" href="./detail.html?id=dark">
+                <figure class="ec-product-card__figure">
+                  <img class="ec-product-card__image" src="../assets/images/shop/dark.webp" alt="深煎りブレンドのコーヒー豆"
+                    width="600" height="600" loading="lazy" />
+                </figure>
+                <p class="ec-product-card__category">COFFEE BEANS</p>
+                <h2 class="ec-product-card__name">深煎りブレンド 200g</h2>
+              </a>
+              <p class="ec-product-card__price"><span>¥1,500</span><small>（税込）</small></p>
+              <button class="ec-product-card__button" type="button" data-add-to-cart="dark"
+                aria-label="深煎りブレンドをカートに追加">ADD TO CART</button>
+            </article>
+          </li>
+
+          <li class="ec-products__item" data-category="goods" data-product-id="mug">
+            <article class="ec-product-card">
+              <a class="ec-product-card__link" href="./detail.html?id=mug">
+                <figure class="ec-product-card__figure">
+                  <img class="ec-product-card__image" src="../assets/images/shop/img_mug.webp" alt="オリジナルの陶器マグカップ"
+                    width="600" height="600" loading="lazy" />
+                </figure>
+                <p class="ec-product-card__category">GOODS</p>
+                <h2 class="ec-product-card__name">オリジナルマグカップ</h2>
+              </a>
+              <p class="ec-product-card__price"><span>¥2,200</span><small>（税込）</small></p>
+              <button class="ec-product-card__button" type="button" data-add-to-cart="mug"
+                aria-label="オリジナルマグカップをカートに追加">ADD TO CART</button>
+            </article>
+          </li>
+
+          <li class="ec-products__item" data-category="goods" data-product-id="dripper">
+            <article class="ec-product-card">
+              <a class="ec-product-card__link" href="./detail.html?id=dripper">
+                <figure class="ec-product-card__figure">
+                  <img class="ec-product-card__image" src="../assets/images/shop/dripper.webp" alt="陶器製のコーヒードリッパー"
+                    width="600" height="600" loading="lazy" />
+                </figure>
+                <p class="ec-product-card__category">GOODS</p>
+                <h2 class="ec-product-card__name">陶器ドリッパー</h2>
+              </a>
+              <p class="ec-product-card__price"><span>¥2,800</span><small>（税込）</small></p>
+              <button class="ec-product-card__button" type="button" data-add-to-cart="dripper"
+                aria-label="陶器ドリッパーをカートに追加">ADD TO CART</button>
+            </article>
+          </li>
+        </ul>
+        <p class="ec-products__empty" hidden>該当する商品はありません。</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- TODO: 既存サイトのフッターに差し替えてOK -->
+  <footer class="ec-footer">
+    <a href="../index.html">is Coffee</a>
+    <p><small>※このオンラインショップはデモです。実際の販売は行っていません。</small></p>
+  </footer>
+  <!-- TODO: EC用JavaScriptを実装する場合はここで読み込む -->
+</body>
+
+</html>

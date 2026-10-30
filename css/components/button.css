@@ -1,1 +1,25 @@
 @charset "utf-8";
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: var(--color-main);
+    color: var(--color-base);
+    transition: .5s;
+
+    &:hover {
+        opacity: .75;
+    }
+}
+
+@media (max-width: 768px) {
+    .button {
+        width: 100% !important;
+        padding: calc(16 / 375 * 100vw);
+        border-radius: calc(32 / 375 * 100vw);
+    }
+}
