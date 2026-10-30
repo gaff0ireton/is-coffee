@@ -7,6 +7,7 @@
 
 @import url("./layout/header.css") layer(layout);
 @import url("./layout/footer.css") layer(layout);
+@import url("./layout/load.css") layer(layout);
 
 @import url("./components/button.css") layer(components);
 @import url("./components/modal.css") layer(components);
@@ -14,6 +15,7 @@
 @import url("./sections/fv.css") layer(sections);
 @import url("./sections/information.css") layer(sections);
 @import url("./sections/about.css") layer(sections);
+@import url("./sections/shop.css") layer(sections);
 @import url("./sections/cat.css") layer(sections);
 @import url("./sections/common.css") layer(sections);
 @import url("./sections/menu.css") layer(sections);
