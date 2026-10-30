@@ -36,8 +36,8 @@
     content: "";
     /* 矢印のスタイル */
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: .5em;
+    bottom: .5em;
     width: 1em;
     aspect-ratio: 1/1;
     border-top: 3px solid var(--color-main);
@@ -60,7 +60,11 @@
 
 @media (max-width: 768px) {
     .info__summary {
-        padding-right: 1em;
+        padding-right: 2.5em;
+    }
+
+    .info__summary::after {
+        width: 1em;
     }
 
     .info__content {

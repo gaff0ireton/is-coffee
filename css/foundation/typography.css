@@ -80,6 +80,7 @@
     .menu__category {
         color: var(--color-base);
         font: 700 1.75rem/1.4 var(--font-en);
+        letter-spacing: .1em;
     }
 
     .menu__label-ja {
@@ -102,6 +103,20 @@
         font-size: .875rem;
         line-height: 1.5;
         letter-spacing: .1em;
+    }
+}
+
+.menu__text {
+    h4 {
+        &:last-child {
+            font-size: 1.25rem;
+
+            >span {
+                &:last-child {
+                    font-size: 1rem;
+                }
+            }
+        }
     }
 }
 
@@ -165,7 +180,6 @@
     }
 
     .info__summary {
-
         time {
             font-size: calc(14 / 375 * 100vw);
         }
@@ -204,8 +218,51 @@
         font-size: calc(28 / 375 * 100vw);
     }
 
-    .menu__label-en {
-        font-size: calc(16 / 375 * 100vw);
+    .menu__detailHead {
+
+        .menu__label-en,
+        .menu__label-ja {
+            font-size: calc(12 / 375 * 100vw);
+        }
+
+        .menu__detailTitle {
+            font-size: calc(28 / 375 * 100vw);
+        }
+
+        .menu__label-ja {
+            color: var(--color-text);
+        }
+    }
+
+    .gift-modal {
+        h2 {
+            color: var(--color-accent);
+            font-size: calc(14 / 375 * 100vw);
+        }
+
+        p {
+            font-size: calc(14 / 375 * 100vw);
+            line-height: 1.5;
+            letter-spacing: .02em;
+        }
+    }
+
+    .menu__text {
+        h4 {
+            &:last-child {
+                font-size: calc(20 / 375 * 100vw);
+
+                >span {
+                    &:last-child {
+                        font-size: calc(16 / 375 * 100vw);
+                    }
+                }
+            }
+        }
+
+        p {
+            font-size: calc(16 / 375 * 100vw);
+        }
     }
 
     .button {
